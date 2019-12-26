@@ -96,10 +96,10 @@
 							<a class="nav-link text-white" href="blog.html">Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{{url('#)}}">Gallery</a>
+							<a class="nav-link text-white" href="{{url('#')}}">Gallery</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{{url('contact')}}">Contact Us</a>
+							<a class="nav-link text-white" href="#">Contact Us</a>
 						</li>
 					</ul>
 				</div>

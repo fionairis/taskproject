@@ -10,16 +10,16 @@ class CompaniesController extends Controller
         return view('admin.company');
     }
     public function save(Request $request){
-        
+
     $this->validate($request,['name'=>'required','address'=>'required','file'=>'required']);
-    $company=new Company(); 
+    $company=new Company();
     $company->name = $request->name;
     $company->address = $request->address;
     $company->file = $request->file;
     $company->save();
     echo('Data inserted succesfully');
     return redirect ('index');
-print_r($req->input());
+//print_r($req->input());
 
 
     }
@@ -32,23 +32,32 @@ public function delete($id){
  $company =Company::where('id',$id)->delete();
     // session()->flash('message','Successfully deleted');
      return redirect()->back();
-    //print_r($req->input());
+
 
 }
 public function edit($id){
-    // $inputs=Input::all();
     $company = Company::find($id);
    return view('edit',compact('company'));
-  
-   
+
+
 }
 public function update(Request $request,$id){
     $this->validate($request,['name'=>'required','address'=>'required','file'=>'required']);
-    $company=new Company(); 
+    $company=new Company();
     $company->name = $request->name;
     $company->address = $request->address;
     $company->file = $request->file;
    echo $company->save();
+
+
+
+
+
+
+
+
+
+
  return redirect('show')->with('success','post updated');
 
 }

@@ -1,7 +1,7 @@
 <?php
 
-namespace App;
-
+namespace App\Models;
+// aru ni yesari nai move garnu
 use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model

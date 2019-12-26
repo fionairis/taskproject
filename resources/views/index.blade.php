@@ -20,7 +20,7 @@
 <td>{{ $company->file }}</td>
 
 <td><a href ="{{url('edit')}}/{{($company->id)}}"><input type="button" value ='edit'></a></td>
-<td><a href ="{{url('delete')}}/{{($company->id)}}"><input type="button" value ='delete'></a></td>
+<td><a href ="{{url('deletee')}}/{{($company->id)}}"><input type="button" value ='delete'></a></td>
 <td><input type="button" value ='update'></td>
 
 </tr>
